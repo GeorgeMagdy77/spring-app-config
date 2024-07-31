@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+
+# this means whenever there is an environment variable called EUREKA available at that time it will be used otherwise when it isn't available the URL will be used
