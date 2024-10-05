@@ -8,3 +8,7 @@ eureka:
       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 
 # this means whenever there is an environment variable called EUREKA available at that time it will be used otherwise when it isn't available the URL will be used
+okta:
+  oauth2:
+    issuer: https://dev-83737420.okta.com/oauth2/default
+    audience: api://default
